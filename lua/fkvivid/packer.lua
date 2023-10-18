@@ -22,11 +22,19 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
-  use('tpope/vim-fugitive')
   use('ThePrimeagen/vim-be-good')
+
+  -- git
+  use('tpope/vim-fugitive')
+  use('tpope/vim-rhubarb')
+  use('lewis6991/gitsigns.nvim')
+
+    -- Detect tabstop and shiftwidth automatically
+  use('tpope/vim-sleuth')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
+
 	  branch = 'v3.x',
 	  requires = {
 		  --- Uncomment these if you want to manage LSP servers from neovim
@@ -40,6 +48,11 @@ return require('packer').startup(function(use)
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'L3MON4D3/LuaSnip'},
 	  }
+  }
+
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
 end)
