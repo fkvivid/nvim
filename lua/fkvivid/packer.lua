@@ -13,8 +13,9 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Colorschemes
   use { "ellisonleao/gruvbox.nvim" }
-
+  use { "folke/tokyonight.nvim" }
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
   use( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
