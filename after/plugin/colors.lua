@@ -49,7 +49,7 @@ TokyoNight()
 -- Configure lualine.nvim
 require('lualine').setup {
   options = {
-    theme = 'tokyonight-night',  -- Change the theme here to match your color scheme
+    theme = 'tokyonight',  -- Change the theme here to match your color scheme
     component_separators = '|',
     section_separators = '',
   },

@@ -77,12 +77,17 @@ _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
     path = "/Users/fkvivid/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
+    url = "https://github.com/L4MON4D3/LuaSnip"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/fkvivid/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["conform.nvim"] = {
+    loaded = true,
+    path = "/Users/fkvivid/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,

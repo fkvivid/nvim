@@ -32,6 +32,8 @@ return require('packer').startup(function(use)
     -- Detect tabstop and shiftwidth automatically
   use('tpope/vim-sleuth')
 
+  use('stevearc/conform.nvim')
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 
@@ -46,7 +48,7 @@ return require('packer').startup(function(use)
 		  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'L3MON4D3/LuaSnip'},
+		  {'L4MON4D3/LuaSnip'},
 	  }
   }
 
@@ -58,5 +60,6 @@ return require('packer').startup(function(use)
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
 	  require("toggleterm").setup()
   end}
+
 end)
 
